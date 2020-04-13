@@ -35,6 +35,7 @@ import matplotlib.pyplot as plt
 from IPython import display
 from mtcnn import MTCNN
 from model import *
+
 def land_crop(img):
     l= land_mark(img)
     start_h = 0
