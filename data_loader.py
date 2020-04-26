@@ -20,11 +20,11 @@ def process_path(file_path):
     return img
 
 def data_load():
-    list_ds_src_img = tf.data.Dataset.list_files("./dataset/아이유/img/*", shuffle=False)
-    list_ds_src_land= tf.data.Dataset.list_files("./dataset/아이유/land/*", shuffle=False)
+    list_ds_src_img = tf.data.Dataset.list_files("./dataset/src/img/*", shuffle=False)
+    list_ds_src_land= tf.data.Dataset.list_files("./dataset/src/land/*", shuffle=False)
 
-    list_ds_dst_img = tf.data.Dataset.list_files("./dataset/이준혁/img/*", shuffle=False)
-    list_ds_dst_land= tf.data.Dataset.list_files("./dataset/이준혁/land/*", shuffle=False)
+    list_ds_dst_img = tf.data.Dataset.list_files("./dataset/dst/img/*", shuffle=False)
+    list_ds_dst_land= tf.data.Dataset.list_files("./dataset/dst/land/*", shuffle=False)
     # Set `num_parallel__calls` so multiple images are loaded/processed in parallel.
     src_ds = list_ds_src_img.map(process_path, num_parallel_calls=AUTOTUNE)
     src_land_ds = list_ds_src_land.map(process_path, num_parallel_calls=AUTOTUNE)
