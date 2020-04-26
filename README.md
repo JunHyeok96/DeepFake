@@ -115,7 +115,12 @@ DeepFake
 $ git clone https://github.com/JunHyeok96/DeepFake.git
 $ cd DeepFake 
 $ python make_landmark.py 
+And follow the train.ipynb process.  
+Once the learning is complete, 
+$ python make_deepfake_video.py 
 ```
+
+
 
 
 ##### Image Source
