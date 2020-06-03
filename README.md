@@ -1,6 +1,7 @@
 # DeepFake v1 
 #### * I do not allow malicious video production through this source code. This is just a practice code. (해당 소스 코드를 통한 악의적인 영상 제작을 불허합니다.)
 
+### version Tensorflow 2.0
 
 ## 1. Make dataset
 
